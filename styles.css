@@ -1,0 +1,171 @@
+:root{
+	--background-image-url-02: url("./images/01-zuitt_2.png");
+	--background-image-url-04: url("./images/02-zuitt_4.png");
+	--background-image-url-08: url("./images/03-zuitt_8.png");
+	--background-image-url-16: url("./images/04-zuitt_16.png");
+	--background-image-url-32: url("./images/05-zuitt_32.png");
+	--background-image-url-64: url("./images/06-zuitt_64.png");
+	--background-image-url-128: url("./images/07-zuitt_128.png");
+	--background-image-url-256: url("./images/08-zuitt_256.png");
+	--background-image-url-512: url("./images/09-zuitt_512.png");
+	--background-image-url-1024: url("./images/10-zuitt_1024.png");
+	--background-image-url-2048: url("./images/11-zuitt_2048.png");
+	--background-image-url-4096: url("./images/12-zuitt_4096.png");
+	--background-image-url-8192: url("./images/13-zuitt_8192.png");
+	--bgImageStory2048:url("./images/story-thumbnail-2048.jpg");
+    --bgImageSky: url("./images/blue-sky.jpg");
+	}
+
+
+/* 
+
+tag selector
+
+use hashtag to select tag names such as div id.
+width and height, size ng board (item selected). 
+usual unit is px or pixels to display.
+background color is hexadecimal color codes.
+margin 0 auto ensures our board center.
+
+display flex arranges the child elements to a row. 
+flex-wrap allows items to wrap onto pultiple lines if there is not enough space in the container. maximize spaces.
+ use dot to mention class.
+
+
+ */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+    background-image: var(--bgImageSky);
+    background-size: 100% 100%;
+}
+
+hr{
+	max-width: 480px;
+}
+
+#board{
+	width: 400px;
+	height: 400px;
+	background-color: #ffffff;
+	border: 6px solid #7cacf2;
+	margin: 0 auto;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.tile{
+	width: 90px;
+	height: 90px;
+	border: 5px solid #7cacf2;
+	font-size: 25px;
+	font-weight: bold;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*without display flex,
+ justify content and align items wont function properly.*/
+
+/* bg color = bacground color of text
+color = text color 
+kapag light ang bg, dark ang text
+kapag dark ang bg, light ang text
+text should be readable and eye pleasing*/
+
+ .x2{
+ 	background-color: #eee4da;
+ 	color: rgba(0, 0, 0, 0);
+ 	background-image: var(--background-image-url-02);
+ 	background-size: 100% 100%;
+ }
+
+  .x4{
+ 	background-color: #ece0ca;
+ 	color: rgba(0, 0, 0, 0);
+ 	background-image: var(--background-image-url-04);
+ 	background-size: 100% 100%;
+ }
+
+  .x8{
+ 	background-color: #f4b17a;
+ 	color: rgba(0, 0, 0, 0);
+ 	background-image: var(--background-image-url-08);
+ 	background-size: 100% 100%;
+ }
+
+
+  .x16{
+ 	background-color: #f59575;
+ 	color: rgba(0, 0, 0, 0);
+ 	background-image: var(--background-image-url-16);
+ 	background-size: 100% 100%;
+ }
+
+ .x32 {
+    background-color: #f57c5f;
+    color: rgba(0, 0, 0, 0);
+    background-image: var(--background-image-url-32);
+ 	background-size: 100% 100%;
+    }
+                
+.x64 {
+    background-color: #f65d3b;
+    color: rgba(0, 0, 0, 0);
+    background-image: var(--background-image-url-64);
+ 	background-size: 100% 100%;
+    }
+                
+.x128 {
+    background-color: #edce71;
+    color: rgba(0, 0, 0, 0);
+    background-image: var(--background-image-url-128);
+ 	background-size: 100% 100%;
+    }
+.x256 {
+    background-color: #edcc63;
+    color: rgba(0, 0, 0, 0);
+    background-image: var(--background-image-url-256);
+ 	background-size: 100% 100%;
+    }
+                
+.x512 {
+    background-color: #edc651;
+    color: rgba(0, 0, 0, 0);
+    background-image: var(--background-image-url-512);
+ 	background-size: 100% 100%;
+    }
+
+.x1024 {
+    background-color: #eec744;
+    color: rgba(0, 0, 0, 0);
+    background-image: var(--background-image-url-1024);
+ 	background-size: 100% 100%;
+    }
+                
+.x2048 {
+    background-color: #eec230;
+    color: rgba(0, 0, 0, 0);
+    background-image: var(--background-image-url-2048);
+ 	background-size: 100% 100%;
+    }
+                
+.x4096 {
+    background-color: #fe3d3d;
+    color: rgba(0, 0, 0, 0);
+    background-image: var(--background-image-url-4096);
+ 	background-size: 100% 100%;
+    }
+                
+.x8192 {
+    background-color: #ff2020;
+    color: rgba(0, 0, 0, 0);
+    background-image: var(--background-image-url-8192);
+ 	background-size: 100% 100%;
+    }
+
+
